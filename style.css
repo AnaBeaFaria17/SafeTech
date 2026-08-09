@@ -14,11 +14,13 @@ body {
     color: #ffffff;
 }
 
-/* Cabeçalho */
-/* Cabeçalho */
+/* =========================
+   CABEÇALHO
+========================= */
+
 header {
     background-color: #081f38;
-    padding: 20px 8%;
+    padding: 15px 8%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,6 +39,7 @@ header {
     display: block;
 }
 
+/* Menu */
 .nav-links {
     display: flex;
     list-style: none;
@@ -54,7 +57,10 @@ header {
     color: #00c2ff;
 }
 
-/* Página inicial */
+/* =========================
+   PÁGINA INICIAL
+========================= */
+
 .hero {
     min-height: 85vh;
     display: flex;
@@ -110,6 +116,7 @@ header {
     box-shadow: 0 10px 25px rgba(0, 194, 255, 0.25);
 }
 
+/* Ícone do escudo */
 .hero-visual {
     display: flex;
     justify-content: center;
@@ -124,7 +131,10 @@ header {
     border: 1px solid rgba(0, 194, 255, 0.3);
 }
 
-/* Sobre */
+/* =========================
+   QUEM SOMOS
+========================= */
+
 .sobre {
     padding: 100px 15%;
     text-align: center;
@@ -151,7 +161,10 @@ header {
     color: #c7d5e0;
 }
 
-/* Serviços */
+/* =========================
+   SERVIÇOS
+========================= */
+
 .servicos {
     padding: 100px 10%;
     text-align: center;
@@ -196,7 +209,10 @@ header {
     font-size: 14px;
 }
 
-/* Contato */
+/* =========================
+   CONTATO
+========================= */
+
 .contato {
     text-align: center;
     padding: 100px 20px;
@@ -213,7 +229,10 @@ header {
     margin-bottom: 30px;
 }
 
-/* Rodapé */
+/* =========================
+   RODAPÉ
+========================= */
+
 footer {
     background-color: #04101e;
     padding: 35px 8%;
@@ -229,7 +248,10 @@ footer p {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -241,6 +263,10 @@ footer p {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .logo-img {
+        width: 130px;
     }
 
     .hero {
