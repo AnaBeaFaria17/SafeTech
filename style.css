@@ -15,6 +15,7 @@ body {
 }
 
 /* Cabeçalho */
+/* Cabeçalho */
 header {
     background-color: #081f38;
     padding: 20px 8%;
@@ -29,13 +30,11 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-size: 26px;
-    font-weight: 800;
-}
-
-.logo span {
-    color: #00c2ff;
+/* Logo em imagem */
+.logo-img {
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
 .nav-links {
