@@ -1,1 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #071a2f;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #081f38;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #00c2ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00c2ff;
+}
+
+/* Página inicial */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+    background: linear-gradient(135deg, #071a2f, #0b2d4d);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #00c2ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00c2ff;
+}
+
+.hero-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #c7d5e0;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00c2ff;
+    color: #071a2f;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 194, 255, 0.25);
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shield {
+    font-size: 150px;
+    padding: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 194, 255, 0.1);
+    border: 1px solid rgba(0, 194, 255, 0.3);
+}
+
+/* Sobre */
+.sobre {
+    padding: 100px 15%;
+    text-align: center;
+    background-color: #081f38;
+}
+
+.section-title p {
+    color: #00c2ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.sobre > p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    color: #c7d5e0;
+}
+
+/* Serviços */
+.servicos {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #0b2d4d;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid rgba(0, 194, 255, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00c2ff;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #c7d5e0;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Contato */
+.contato {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0b2d4d, #071a2f);
+}
+
+.contato h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    color: #c7d5e0;
+    margin-bottom: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #04101e;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #8fa4b5;
+    font-size: 13px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 8%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .shield {
+        font-size: 100px;
+        padding: 35px;
+    }
+
+    .section-title h2,
+    .contato h2 {
+        font-size: 28px;
+    }
+}
