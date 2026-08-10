@@ -1,145 +1,126 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SafeTech | Não espere o problema. Antecipe com SafeTech.</title>
+    <title>SafeTech | Segurança Digital Preventiva</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<!-- Fonte Google -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Cabeçalho -->
-<header>
-    <nav class="navbar">
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
 
-        <!-- Logo -->
-       <img src="logo.png" alt="Logo SafeTech" class="logo-img">
+    <header class="header">
 
-        <!-- Menu -->
-        <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <nav class="navbar">
 
-    </nav>
-</header>
+            <!-- Logo -->
+            <a href="#inicio" class="logo-link">
+                <img src="logo.png" alt="Logo SafeTech" class="logo-img">
+            </a>
 
-<!-- Página inicial -->
-<main>
+            <!-- Menu -->
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="validacao.html">Validação</a></li>
+            </ul>
 
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <p class="tag">SEGURANÇA DIGITAL INTELIGENTE</p>
+            <!-- Botão -->
+            <a href="contato.html" class="nav-button">
+                Contato
+            </a>
 
-            <h1>
-                Não espere o problema.<br>
-                <span>Antecipe com SafeTech.</span>
-            </h1>
+        </nav>
 
-            <p class="hero-text">
-                Protegemos famílias e empresas contra ameaças digitais,
-                identificando riscos e vulnerabilidades antes que eles
-                se tornem um problema.
-            </p>
+    </header>
 
-            <a href="#servicos" class="btn">Conheça nossas soluções</a>
-        </div>
 
-        <div class="hero-visual">
-            <div class="shield">🛡️</div>
-        </div>
-    </section>
+    <!-- =========================
+         BANNER PRINCIPAL
+    ========================== -->
 
-    <!-- Sobre -->
-    <section class="sobre" id="sobre">
-        <div class="section-title">
-            <p>QUEM SOMOS</p>
-            <h2>Segurança, confiança e inovação.</h2>
-        </div>
+    <main>
 
-        <p>
-            A SafeTech nasceu com o objetivo de mostrar que a prevenção
-            é a melhor forma de proteger pessoas e empresas no ambiente
-            digital. Utilizamos a tecnologia como uma aliada para antecipar
-            riscos, monitorar vulnerabilidades e proporcionar mais
-            tranquilidade e segurança.
-        </p>
-    </section>
+        <section class="hero" id="inicio">
 
-    <!-- Serviços -->
-    <section class="servicos" id="servicos">
-        <div class="section-title">
-            <p>NOSSAS SOLUÇÕES</p>
-            <h2>Proteção inteligente para o mundo digital.</h2>
-        </div>
+            <div class="hero-content">
 
-        <div class="cards">
+                <span class="hero-tag">
+                    SEGURANÇA DIGITAL PREVENTIVA
+                </span>
 
-            <article class="card">
-                <div class="icon">🔍</div>
-                <h3>Monitoramento</h3>
-                <p>
-                    Identificamos possíveis ameaças e vulnerabilidades
-                    antes que elas causem prejuízos.
+                <h1>
+                    Não espere o problema.
+                    <span>Antecipe com SafeTech.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Protegemos famílias e empresas contra ameaças digitais
+                    por meio de prevenção, monitoramento e soluções
+                    personalizadas de segurança.
                 </p>
-            </article>
 
-            <article class="card">
-                <div class="icon">🔐</div>
-                <h3>Proteção de Dados</h3>
-                <p>
-                    Ajudamos a manter informações importantes protegidas
-                    contra acessos indevidos.
-                </p>
-            </article>
+                <div class="hero-buttons">
 
-            <article class="card">
-                <div class="icon">⚠️</div>
-                <h3>Prevenção de Riscos</h3>
-                <p>
-                    Trabalhamos com estratégias de prevenção para aumentar
-                    a segurança no ambiente digital.
-                </p>
-            </article>
+                    <a href="#servicos" class="btn btn-primary">
+                        Conheça nossos serviços
+                    </a>
 
-        </div>
-    </section>
+                    <a href="contato.html" class="btn btn-secondary">
+                        Fale conosco
+                    </a>
 
-    <!-- Contato -->
-    <section class="contato" id="contato">
-        <h2>Proteja seu futuro digital hoje.</h2>
-        <p>
-            Não espere uma ameaça acontecer para começar a se proteger.
-        </p>
+                </div>
 
-        <a href="mailto:contato@safetech.com" class="btn">
-            Entre em contato
-        </a>
-    </section>
+            </div>
 
-</main>
 
-<!-- Rodapé -->
-<footer>
-    <div class="logo">
-        <span>Safe</span>Tech
-    </div>
+            <!-- Área visual -->
+            <div class="hero-visual">
 
-    <p>© 2026 SafeTech. Segurança digital para um futuro mais tranquilo.</p>
-</footer>
+                <div class="security-card">
+
+                    <div class="security-icon">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Proteção Inteligente
+                    </h3>
+
+                    <p>
+                        Antecipamos riscos para manter
+                        seus dados e dispositivos protegidos.
+                    </p>
+
+                    <div class="security-status">
+                        <span></span>
+                        Sistema protegido
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
-</html>
 
+</html>
