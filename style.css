@@ -1,7 +1,3 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +10,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #171F49;
 }
 
@@ -37,9 +33,6 @@ header {
     align-items: center;
 }
 
-
-/* Logo */
-
 .logo {
     display: flex;
     align-items: center;
@@ -53,9 +46,6 @@ header {
     height: auto;
     display: block;
 }
-
-
-/* Menu */
 
 .nav-links {
     display: flex;
@@ -78,24 +68,17 @@ header {
 
 
 /* =========================
-   PÁGINA INICIAL
+   HOME
 ========================= */
 
 .hero {
     min-height: 85vh;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 80px 10%;
     gap: 50px;
-
-    background: linear-gradient(
-        135deg,
-        #171F49,
-        #142451
-    );
+    background: linear-gradient(135deg, #171F49, #142451);
 }
 
 .hero-content {
@@ -128,34 +111,24 @@ header {
     margin-bottom: 30px;
 }
 
-
-/* Botão */
-
-.btn {
+.btn,
+.btn-cta {
     display: inline-block;
-
     background-color: #FD8F14;
     color: #171F49;
-
     text-decoration: none;
-
     padding: 14px 28px;
-
     border-radius: 8px;
-
     font-weight: 700;
-
     transition: 0.3s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-cta:hover {
     background-color: #FFA539;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
 }
-
-
-/* Visual do Hero */
 
 .hero-visual {
     display: flex;
@@ -165,19 +138,15 @@ header {
 
 .shield {
     font-size: 150px;
-
     padding: 50px;
-
     border-radius: 50%;
-
     background-color: rgba(255, 255, 255, 0.08);
-
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
 /* =========================
-   TÍTULOS DAS SEÇÕES
+   TÍTULOS
 ========================= */
 
 .section-title {
@@ -186,21 +155,15 @@ header {
 
 .section-title p {
     color: #FD8F14;
-
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 10px;
 }
 
 .section-title h2 {
     color: #171F49;
-
     font-size: 36px;
-
     margin-bottom: 25px;
 }
 
@@ -211,21 +174,15 @@ header {
 
 .sobre {
     padding: 100px 15%;
-
     text-align: center;
-
     background-color: #FFFFFF;
 }
 
 .sobre > p {
     max-width: 800px;
-
     margin: auto;
-
     line-height: 1.8;
-
     color: #4B5563;
-
     font-size: 15px;
 }
 
@@ -236,69 +193,49 @@ header {
 
 .servicos {
     padding: 100px 10%;
-
     text-align: center;
-
     background-color: #F5F7FA;
 }
 
 .cards {
     display: flex;
-
     justify-content: center;
-
     gap: 25px;
-
     margin-top: 50px;
-
     flex-wrap: wrap;
 }
 
 .card {
     background-color: #FFFFFF;
-
     width: 300px;
-
     padding: 35px 25px;
-
     border-radius: 15px;
-
     text-align: left;
-
     border: 1px solid #E5E7EB;
-
     box-shadow: 0 8px 20px rgba(23, 31, 73, 0.06);
-
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-
     border-color: #FD8F14;
-
     box-shadow: 0 15px 30px rgba(23, 31, 73, 0.12);
 }
 
 .icon {
     font-size: 35px;
-
     margin-bottom: 20px;
 }
 
 .card h3 {
     color: #171F49;
-
     font-size: 20px;
-
     margin-bottom: 12px;
 }
 
 .card p {
     color: #4B5563;
-
     line-height: 1.7;
-
     font-size: 14px;
 }
 
@@ -309,9 +246,7 @@ header {
 
 .diferenciais {
     padding: 100px 10%;
-
     text-align: center;
-
     background-color: #171F49;
 }
 
@@ -319,59 +254,40 @@ header {
     color: #FFFFFF;
 }
 
-.diferenciais .section-title p {
-    color: #FD8F14;
-}
-
 .diferenciais-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 25px;
-
     margin-top: 50px;
 }
 
 .diferencial-card {
     padding: 35px 25px;
-
     border-radius: 15px;
-
     background-color: rgba(255, 255, 255, 0.08);
-
     border: 1px solid rgba(255, 255, 255, 0.12);
-
     transition: 0.3s;
 }
 
 .diferencial-card:hover {
     transform: translateY(-8px);
-
     border-color: #FD8F14;
-
-    background-color: rgba(255, 255, 255, 0.12);
 }
 
 .diferencial-icon {
     font-size: 35px;
-
     margin-bottom: 20px;
 }
 
 .diferencial-card h3 {
     color: #FFFFFF;
-
     font-size: 18px;
-
     margin-bottom: 12px;
 }
 
 .diferencial-card p {
     color: #D8DEEA;
-
     font-size: 14px;
-
     line-height: 1.7;
 }
 
@@ -382,66 +298,45 @@ header {
 
 .como-funciona {
     padding: 100px 10%;
-
     background-color: #FFFFFF;
-
     text-align: center;
 }
 
 .etapas {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 30px;
-
     margin-top: 50px;
 }
 
 .etapa {
-    position: relative;
-
     padding: 20px;
 }
 
 .numero {
     width: 60px;
     height: 60px;
-
     margin: 0 auto 20px;
-
     border-radius: 50%;
-
     background-color: #171F49;
-
     color: #FFFFFF;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     font-size: 22px;
-
     font-weight: 700;
-
     border: 4px solid #FD8F14;
 }
 
 .etapa h3 {
     color: #171F49;
-
     font-size: 19px;
-
     margin-bottom: 12px;
 }
 
 .etapa p {
     color: #4B5563;
-
     font-size: 14px;
-
     line-height: 1.7;
 }
 
@@ -452,204 +347,119 @@ header {
 
 .depoimentos {
     padding: 100px 10%;
-
     background-color: #F5F7FA;
-
     text-align: center;
 }
 
 .depoimentos-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
-
     margin-top: 50px;
 }
 
 .depoimento-card {
     background-color: #FFFFFF;
-
     padding: 30px;
-
     border-radius: 16px;
-
     text-align: left;
-
     border: 1px solid #E5E7EB;
-
     box-shadow: 0 8px 25px rgba(23, 31, 73, 0.08);
-
     transition: 0.3s;
 }
 
 .depoimento-card:hover {
     transform: translateY(-8px);
-
     border-color: #FD8F14;
-
-    box-shadow: 0 15px 30px rgba(23, 31, 73, 0.12);
 }
 
 .estrelas {
     color: #FD8F14;
-
     font-size: 18px;
-
     letter-spacing: 3px;
-
     margin-bottom: 18px;
 }
 
 .depoimento-card p {
     color: #4B5563;
-
     font-size: 14px;
-
     line-height: 1.7;
-
     margin-bottom: 25px;
 }
 
 .cliente {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
 }
 
 .avatar {
     width: 45px;
     height: 45px;
-
     border-radius: 50%;
-
     background-color: #171F49;
-
     color: #FFFFFF;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     font-weight: 700;
-
-    font-size: 18px;
 }
 
 .cliente strong {
     display: block;
-
     color: #171F49;
-
     font-size: 15px;
 }
 
 .cliente span {
-    display: block;
-
     color: #6B7280;
-
     font-size: 12px;
-
-    margin-top: 3px;
 }
 
 .nota-depoimentos {
     margin-top: 35px;
-
     color: #6B7280;
-
     font-size: 12px;
-
     font-style: italic;
 }
 
 
 /* =========================
-   CHAMADA PARA CONTATO
+   CTA
 ========================= */
 
 .cta {
     padding: 100px 10%;
-
-    background: linear-gradient(
-        135deg,
-        #171F49,
-        #142451
-    );
-
+    background: linear-gradient(135deg, #171F49, #142451);
     text-align: center;
 }
 
 .cta-content {
     max-width: 800px;
-
     margin: 0 auto;
 }
 
 .cta-tag {
     color: #FD8F14;
-
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 15px;
 }
 
 .cta h2 {
     color: #FFFFFF;
-
     font-size: 42px;
-
     line-height: 1.2;
-
     margin-bottom: 20px;
 }
 
 .cta-content > p:not(.cta-tag) {
     color: #D8DEEA;
-
     font-size: 16px;
-
     line-height: 1.8;
-
     max-width: 650px;
-
     margin: 0 auto 30px;
-}
-
-.btn-cta {
-    display: inline-block;
-
-    background-color: #FD8F14;
-
-    color: #171F49;
-
-    text-decoration: none;
-
-    padding: 15px 30px;
-
-    border-radius: 8px;
-
-    font-weight: 700;
-
-    transition: 0.3s;
-}
-
-.btn-cta:hover {
-    background-color: #FFA539;
-
-    transform: translateY(-3px) scale(1.03);
-
-    box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
 }
 
 
@@ -659,22 +469,76 @@ header {
 
 footer {
     background-color: #0D1535;
-
-    padding: 40px 8%;
-
-    text-align: center;
+    padding: 60px 8% 25px;
 }
 
-footer .logo {
-    display: inline-flex;
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
 
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+
+    gap: 50px;
+}
+
+.footer-brand .logo {
+    display: inline-flex;
     margin-bottom: 15px;
 }
 
-footer p {
+.footer-slogan {
     color: #AAB3C5;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 280px;
+}
 
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #AAB3C5;
+    text-decoration: none;
     font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FD8F14;
+}
+
+.footer-contact p {
+    color: #AAB3C5;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #6F7B91;
+    font-size: 11px;
 }
 
 
@@ -696,12 +560,11 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-
-/* =========================
-   CELULAR
-========================= */
 
 @media (max-width: 768px) {
 
@@ -711,15 +574,12 @@ footer p {
 
     .navbar {
         flex-direction: column;
-
         gap: 20px;
     }
 
     .nav-links {
         gap: 15px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
@@ -727,14 +587,9 @@ footer p {
         width: 130px;
     }
 
-
-    /* Hero */
-
     .hero {
         flex-direction: column;
-
         text-align: center;
-
         padding: 70px 8%;
     }
 
@@ -752,12 +607,8 @@ footer p {
 
     .shield {
         font-size: 100px;
-
         padding: 35px;
     }
-
-
-    /* Seções */
 
     .sobre,
     .servicos,
@@ -772,29 +623,11 @@ footer p {
         font-size: 28px;
     }
 
-
-    /* Diferenciais */
-
-    .diferenciais-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Como funciona */
-
-    .etapas {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Depoimentos */
-
+    .diferenciais-grid,
+    .etapas,
     .depoimentos-grid {
         grid-template-columns: 1fr;
     }
-
-
-    /* CTA */
 
     .cta h2 {
         font-size: 30px;
@@ -804,4 +637,23 @@ footer p {
         font-size: 14px;
     }
 
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-slogan {
+        margin: auto;
+    }
+
+    .footer-links,
+    .footer-contact {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
