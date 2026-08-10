@@ -25,8 +25,10 @@ body {
 
 .header {
     background: #171F49;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
@@ -34,13 +36,17 @@ body {
 
 .navbar {
     max-width: 1250px;
+
     margin: 0 auto;
 
     min-height: 82px;
+
     padding: 12px 30px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 25px;
@@ -51,16 +57,21 @@ body {
 
 .logo-link {
     display: flex;
+
     align-items: center;
 }
 
 .logo-img {
     width: 145px;
+
     height: auto;
+
     display: block;
 
     background: #ffffff;
+
     padding: 8px 12px;
+
     border-radius: 10px;
 }
 
@@ -69,9 +80,11 @@ body {
 
 .nav-links {
     display: flex;
+
     align-items: center;
 
     gap: 25px;
+
     list-style: none;
 }
 
@@ -81,6 +94,7 @@ body {
     text-decoration: none;
 
     font-size: 14px;
+
     font-weight: 500;
 
     transition: 0.3s ease;
@@ -91,7 +105,7 @@ body {
 }
 
 
-/* Botão de contato */
+/* Botão */
 
 .nav-button {
     background: #FD8F14;
@@ -105,6 +119,7 @@ body {
     border-radius: 8px;
 
     font-size: 14px;
+
     font-weight: 700;
 
     transition: 0.3s ease;
@@ -118,7 +133,7 @@ body {
 
 
 /* =========================
-   BANNER PRINCIPAL
+   BANNER
 ========================= */
 
 .hero {
@@ -127,7 +142,9 @@ body {
     padding: 80px 7%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 70px;
@@ -138,6 +155,7 @@ body {
             rgba(253, 143, 20, 0.12),
             transparent 30%
         ),
+
         linear-gradient(
             135deg,
             #171F49,
@@ -157,6 +175,7 @@ body {
     color: #FD8F14;
 
     font-size: 13px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -182,6 +201,7 @@ body {
     color: #d9deea;
 
     font-size: 17px;
+
     line-height: 1.8;
 
     max-width: 600px;
@@ -196,9 +216,11 @@ body {
 
 .hero-buttons {
     display: flex;
+
     align-items: center;
 
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
@@ -212,6 +234,7 @@ body {
     text-decoration: none;
 
     font-size: 14px;
+
     font-weight: 700;
 
     transition: 0.3s ease;
@@ -219,6 +242,7 @@ body {
 
 .btn-primary {
     background: #FD8F14;
+
     color: #ffffff;
 }
 
@@ -239,6 +263,7 @@ body {
 
 .btn-secondary:hover {
     background: #ffffff;
+
     color: #171F49;
 
     transform: translateY(-3px);
@@ -251,10 +276,13 @@ body {
 
 .hero-visual {
     width: 420px;
+
     min-width: 350px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
@@ -279,12 +307,15 @@ body {
 
 .security-icon {
     width: 100px;
+
     height: 100px;
 
     margin: 0 auto 25px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -308,6 +339,7 @@ body {
     color: #cbd2df;
 
     font-size: 14px;
+
     line-height: 1.7;
 
     margin-bottom: 25px;
@@ -315,6 +347,7 @@ body {
 
 .security-status {
     display: inline-flex;
+
     align-items: center;
 
     gap: 8px;
@@ -332,6 +365,7 @@ body {
 
 .security-status span {
     width: 8px;
+
     height: 8px;
 
     border-radius: 50%;
@@ -356,7 +390,9 @@ body {
     margin: 0 auto;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 80px;
@@ -374,6 +410,7 @@ body {
     color: #FD8F14;
 
     font-size: 13px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -395,6 +432,7 @@ body {
     color: #4B5563;
 
     font-size: 15px;
+
     line-height: 1.8;
 
     margin-bottom: 18px;
@@ -415,6 +453,7 @@ body {
 
 .about-point {
     display: flex;
+
     align-items: center;
 
     gap: 10px;
@@ -422,10 +461,13 @@ body {
 
 .about-point span {
     width: 25px;
+
     height: 25px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -435,6 +477,7 @@ body {
     color: #ffffff;
 
     font-size: 13px;
+
     font-weight: 700;
 }
 
@@ -444,6 +487,7 @@ body {
     color: #171F49;
 
     font-size: 14px;
+
     font-weight: 600;
 }
 
@@ -454,11 +498,13 @@ body {
     flex: 1;
 
     display: flex;
+
     justify-content: center;
 }
 
 .about-card {
     width: 360px;
+
     min-height: 360px;
 
     border-radius: 25px;
@@ -471,9 +517,11 @@ body {
         );
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -492,6 +540,7 @@ body {
     position: absolute;
 
     width: 220px;
+
     height: 220px;
 
     border-radius: 50%;
@@ -499,15 +548,19 @@ body {
     background: rgba(253, 143, 20, 0.12);
 
     top: -80px;
+
     right: -70px;
 }
 
 .about-icon {
     width: 110px;
+
     height: 110px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -599,11 +652,13 @@ body {
 
 .category-icon {
     width: 55px;
+
     height: 55px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 14px;
@@ -669,11 +724,13 @@ body {
 
 .service-icon {
     width: 55px;
+
     height: 55px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 12px;
@@ -813,11 +870,9 @@ body {
         0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
-
-/* Ícones */
-
 .diferencial-icon {
     width: 65px;
+
     height: 65px;
 
     margin: 0 auto 22px;
@@ -825,6 +880,7 @@ body {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 15px;
@@ -846,6 +902,169 @@ body {
 
 .diferencial-card p {
     color: #cbd2df;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.como-funciona {
+    background: #ffffff;
+
+    padding: 100px 7%;
+}
+
+.como-header {
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.como-header h2 {
+    color: #171F49;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.como-header p {
+    color: #4B5563;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* Etapas */
+
+.steps {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    position: relative;
+}
+
+
+/* Linha entre as etapas */
+
+.steps::before {
+    content: "";
+
+    position: absolute;
+
+    top: 45px;
+
+    left: 10%;
+
+    right: 10%;
+
+    height: 2px;
+
+    background: #FD8F14;
+
+    opacity: 0.35;
+
+    z-index: 0;
+}
+
+.step {
+    text-align: center;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* Número */
+
+.step-number {
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #171F49;
+
+    border: 5px solid #ffffff;
+
+    outline: 2px solid #FD8F14;
+
+    color: #FD8F14;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+/* Ícone */
+
+.step-icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #F5F7FA;
+
+    font-size: 27px;
+
+    transition: 0.3s ease;
+}
+
+.step:hover .step-icon {
+    background: #FD8F14;
+
+    transform: translateY(-4px);
+}
+
+.step h3 {
+    color: #171F49;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.step p {
+    color: #6B7280;
 
     font-size: 13px;
 
@@ -878,10 +1097,14 @@ footer p {
    RESPONSIVIDADE
 ========================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .nav-links {
         gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
     }
 
     .hero {
@@ -902,6 +1125,16 @@ footer p {
 
     .diferenciais-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 50px;
+    }
+
+    .steps::before {
+        display: none;
     }
 }
 
@@ -943,6 +1176,7 @@ footer p {
 
     .hero-text {
         margin-left: auto;
+
         margin-right: auto;
     }
 
@@ -1003,6 +1237,19 @@ footer p {
 
     .diferenciais-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    /* Como funciona */
+
+    .como-funciona {
+        padding: 75px 7%;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
     }
 }
 
@@ -1087,5 +1334,18 @@ footer p {
 
     .diferenciais {
         padding: 65px 20px;
+    }
+
+
+    /* Como funciona */
+
+    .como-funciona {
+        padding: 65px 20px;
+    }
+
+    .step-number {
+        width: 80px;
+
+        height: 80px;
     }
 }
