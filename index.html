@@ -1,137 +1,576 @@
-<!-- =========================
-     DEPOIMENTOS
-========================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<section class="depoimentos" id="depoimentos">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="section-title">
-        <p>O QUE DIZEM SOBRE A SAFETECH</p>
-        <h2>Experiências que geram confiança</h2>
-    </div>
+    <title>SafeTech | Não espere o problema. Antecipe com SafeTech.</title>
 
-    <div class="depoimentos-grid">
+    <link rel="stylesheet" href="style.css">
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
+    <!-- Fonte Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
 
-            <p>
-                “A equipe da SafeTech foi muito atenciosa e explicou
-                as soluções de forma simples e clara. Gostei da
-                disponibilidade para responder às dúvidas.”
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                <img src="logo.png" alt="Logo SafeTech" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         PÁGINA INICIAL
+    ========================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <p class="tag">SEGURANÇA DIGITAL PREVENTIVA</p>
+
+            <h1>
+                Não espere o problema.
+                <span>Antecipe.</span>
+            </h1>
+
+            <p class="hero-text">
+                A SafeTech oferece soluções de segurança digital
+                preventiva para famílias e empresas, ajudando a
+                proteger dados, dispositivos e informações contra
+                ameaças digitais.
             </p>
 
-            <div class="cliente">
-                <div class="avatar">M</div>
-                <div>
-                    <strong>Mariana</strong>
-                    <span>Participante da pesquisa</span>
-                </div>
+            <a href="#servicos" class="btn">
+                Conheça nossos serviços
+            </a>
+
+        </div>
+
+        <div class="hero-visual">
+            <div class="shield">
+                🛡️
             </div>
         </div>
 
+    </section>
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
 
-            <p>
-                “O atendimento foi um dos pontos que mais gostei.
-                A equipe demonstrou profissionalismo e preocupação
-                em entender as necessidades do cliente.”
-            </p>
+    <!-- =========================
+         QUEM SOMOS
+    ========================= -->
 
-            <div class="cliente">
-                <div class="avatar">G</div>
-                <div>
-                    <strong>Gabriel</strong>
-                    <span>Participante da pesquisa</span>
-                </div>
-            </div>
+    <section class="sobre" id="sobre">
+
+        <div class="section-title">
+
+            <p>QUEM SOMOS</p>
+
+            <h2>Segurança antes do problema</h2>
+
+        </div>
+
+        <p>
+            A SafeTech é uma empresa de segurança digital preventiva
+            criada para ajudar famílias e empresas a proteger seus
+            dados, dispositivos e informações. Nosso objetivo é
+            antecipar riscos, identificar vulnerabilidades e orientar
+            nossos clientes para que possam utilizar a tecnologia
+            com mais segurança e tranquilidade.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         SERVIÇOS
+    ========================= -->
+
+    <section class="servicos" id="servicos">
+
+        <div class="section-title">
+
+            <p>NOSSOS SERVIÇOS</p>
+
+            <h2>Soluções para sua segurança digital</h2>
+
         </div>
 
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
+        <div class="cards">
 
-            <p>
-                “A possibilidade de ter um monitoramento contínuo
-                chamou bastante minha atenção. Saber que os riscos
-                podem ser identificados antes de causar problemas
-                traz mais segurança.”
-            </p>
+            <!-- Serviço 1 -->
+            <div class="card">
 
-            <div class="cliente">
-                <div class="avatar">B</div>
-                <div>
-                    <strong>Beatriz</strong>
-                    <span>Participante da pesquisa</span>
-                </div>
+                <div class="icon">🛡️</div>
+
+                <h3>Monitoramento</h3>
+
+                <p>
+                    Acompanhamento contínuo para identificar
+                    possíveis riscos e ameaças digitais.
+                </p>
+
             </div>
+
+
+            <!-- Serviço 2 -->
+            <div class="card">
+
+                <div class="icon">🚨</div>
+
+                <h3>Alertas de Segurança</h3>
+
+                <p>
+                    Avisos sobre comportamentos suspeitos,
+                    vulnerabilidades e possíveis ameaças.
+                </p>
+
+            </div>
+
+
+            <!-- Serviço 3 -->
+            <div class="card">
+
+                <div class="icon">☁️</div>
+
+                <h3>Backup de Dados</h3>
+
+                <p>
+                    Proteção das informações por meio de
+                    estratégias de backup e recuperação.
+                </p>
+
+            </div>
+
+
+            <!-- Serviço 4 -->
+            <div class="card">
+
+                <div class="icon">🔍</div>
+
+                <h3>Diagnóstico</h3>
+
+                <p>
+                    Identificação de vulnerabilidades para
+                    melhorar a segurança dos ambientes digitais.
+                </p>
+
+            </div>
+
+
+            <!-- Serviço 5 -->
+            <div class="card">
+
+                <div class="icon">🎓</div>
+
+                <h3>Treinamento</h3>
+
+                <p>
+                    Orientação para usuários e colaboradores
+                    reconhecerem e evitarem ameaças digitais.
+                </p>
+
+            </div>
+
+
+            <!-- Serviço 6 -->
+            <div class="card">
+
+                <div class="icon">💻</div>
+
+                <h3>Suporte Técnico</h3>
+
+                <p>
+                    Atendimento especializado para auxiliar
+                    na configuração e proteção dos dispositivos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DIFERENCIAIS
+    ========================= -->
+
+    <section class="diferenciais">
+
+        <div class="section-title">
+
+            <p>POR QUE ESCOLHER A SAFETECH?</p>
+
+            <h2>Prevenção que faz a diferença</h2>
+
         </div>
 
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
+        <div class="diferenciais-grid">
 
-            <p>
-                “Achei muito importante a proposta de proteger
-                dados e dispositivos. Hoje usamos tecnologia o
-                tempo todo, então ter ferramentas para aumentar
-                a segurança seria muito útil.”
-            </p>
+            <div class="diferencial-card">
+                <div class="diferencial-icon">🔎</div>
 
-            <div class="cliente">
-                <div class="avatar">L</div>
-                <div>
-                    <strong>Lucas</strong>
-                    <span>Participante da pesquisa</span>
-                </div>
+                <h3>Monitoramento contínuo</h3>
+
+                <p>
+                    Acompanhamos os riscos para agir antes
+                    que eles se transformem em problemas.
+                </p>
             </div>
+
+
+            <div class="diferencial-card">
+                <div class="diferencial-icon">🛡️</div>
+
+                <h3>Prevenção de ameaças</h3>
+
+                <p>
+                    Identificamos vulnerabilidades e ajudamos
+                    a reduzir os riscos digitais.
+                </p>
+            </div>
+
+
+            <div class="diferencial-card">
+                <div class="diferencial-icon">👥</div>
+
+                <h3>Atendimento especializado</h3>
+
+                <p>
+                    Nossa equipe oferece orientação clara
+                    e soluções pensadas para cada cliente.
+                </p>
+            </div>
+
+
+            <div class="diferencial-card">
+                <div class="diferencial-icon">⚙️</div>
+
+                <h3>Soluções personalizadas</h3>
+
+                <p>
+                    Cada família ou empresa possui necessidades
+                    diferentes de proteção.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMO FUNCIONA
+    ========================= -->
+
+    <section class="como-funciona">
+
+        <div class="section-title">
+
+            <p>COMO FUNCIONA</p>
+
+            <h2>Proteção em 4 etapas</h2>
+
         </div>
 
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
+        <div class="etapas">
 
-            <p>
-                “Gostei da variedade de serviços oferecidos pela
-                SafeTech. Ter opções diferentes para famílias e
-                empresas torna a proposta mais completa.”
-            </p>
+            <div class="etapa">
 
-            <div class="cliente">
-                <div class="avatar">R</div>
-                <div>
-                    <strong>Rafael</strong>
-                    <span>Participante da pesquisa</span>
-                </div>
+                <div class="numero">1</div>
+
+                <h3>Contato</h3>
+
+                <p>
+                    O cliente entra em contato com a SafeTech
+                    e apresenta suas necessidades.
+                </p>
+
             </div>
+
+
+            <div class="etapa">
+
+                <div class="numero">2</div>
+
+                <h3>Diagnóstico</h3>
+
+                <p>
+                    Analisamos o ambiente e identificamos
+                    possíveis vulnerabilidades.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <div class="numero">3</div>
+
+                <h3>Plano de proteção</h3>
+
+                <p>
+                    Desenvolvemos uma estratégia de proteção
+                    adequada às necessidades do cliente.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <div class="numero">4</div>
+
+                <h3>Monitoramento</h3>
+
+                <p>
+                    A SafeTech acompanha os riscos e mantém
+                    a proteção de forma contínua.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DEPOIMENTOS
+    ========================= -->
+
+    <section class="depoimentos" id="depoimentos">
+
+        <div class="section-title">
+
+            <p>O QUE DIZEM SOBRE A SAFETECH</p>
+
+            <h2>Experiências que geram confiança</h2>
+
         </div>
 
 
-        <div class="depoimento-card">
-            <div class="estrelas">★★★★★</div>
+        <div class="depoimentos-grid">
 
-            <p>
-                “O foco na prevenção foi o que mais me chamou
-                atenção. A ideia de identificar vulnerabilidades
-                antes que aconteça um problema torna a proposta
-                muito interessante.”
-            </p>
 
-            <div class="cliente">
-                <div class="avatar">J</div>
-                <div>
-                    <strong>Júlia</strong>
-                    <span>Participante da pesquisa</span>
+            <!-- Depoimento 1 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
                 </div>
+
+                <p>
+                    “A equipe da SafeTech foi muito atenciosa
+                    e explicou as soluções de forma simples e clara.
+                    Gostei da disponibilidade para responder às dúvidas.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        M
+                    </div>
+
+                    <div>
+                        <strong>Mariana</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
             </div>
+
+
+            <!-- Depoimento 2 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “O atendimento foi um dos pontos que mais gostei.
+                    A equipe demonstrou profissionalismo e preocupação
+                    em entender as necessidades do cliente.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        G
+                    </div>
+
+                    <div>
+                        <strong>Gabriel</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Depoimento 3 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “A possibilidade de ter um monitoramento contínuo
+                    chamou bastante minha atenção. Saber que os riscos
+                    podem ser identificados antes de causar problemas
+                    traz mais segurança.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        B
+                    </div>
+
+                    <div>
+                        <strong>Beatriz</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Depoimento 4 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Achei muito importante a proposta de proteger
+                    dados e dispositivos. Hoje usamos tecnologia o
+                    tempo todo, então ter ferramentas para aumentar
+                    a segurança seria muito útil.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        L
+                    </div>
+
+                    <div>
+                        <strong>Lucas</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Depoimento 5 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Gostei da variedade de serviços oferecidos pela
+                    SafeTech. Ter opções diferentes para famílias e
+                    empresas torna a proposta mais completa.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        R
+                    </div>
+
+                    <div>
+                        <strong>Rafael</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Depoimento 6 -->
+
+            <div class="depoimento-card">
+
+                <div class="estrelas">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “O foco na prevenção foi o que mais me chamou
+                    atenção. A ideia de identificar vulnerabilidades
+                    antes que aconteça um problema torna a proposta
+                    muito interessante.”
+                </p>
+
+                <div class="cliente">
+
+                    <div class="avatar">
+                        J
+                    </div>
+
+                    <div>
+                        <strong>Júlia</strong>
+                        <span>Participante da pesquisa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
 
-    <p class="nota-depoimentos">
-        Depoimentos ilustrativos elaborados a partir das respostas
-        obtidas no questionário de validação da SafeTech.
-    </p>
+        <p class="nota-depoimentos">
+            Depoimentos ilustrativos elaborados a partir das respostas
+            obtidas no questionário de validação da SafeTech.
+        </p>
 
-</section>
+    </section>
+
+</body>
+
+</html>
