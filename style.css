@@ -63,8 +63,11 @@ body {
 .logo-img {
     width: 145px;
     height: auto;
-
     display: block;
+
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 
