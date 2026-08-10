@@ -166,9 +166,18 @@ section {
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
     gap: 70px;
+
     background:
-        radial-gradient(circle at 85% 20%, rgba(253, 143, 20, 0.10), transparent 30%),
-        linear-gradient(135deg, #ffffff 0%, #f3f6fb 100%);
+        radial-gradient(
+            circle at 82% 25%,
+            rgba(253, 143, 20, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #171f49 0%,
+            #0e1538 100%
+        );
 }
 
 .hero-content {
@@ -181,8 +190,10 @@ section {
     margin-bottom: 20px;
     padding: 8px 14px;
     border-radius: 30px;
-    background: rgba(253, 143, 20, 0.12);
-    color: #c66c00;
+
+    background: rgba(253, 143, 20, 0.16);
+    color: #ffad4d;
+
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.2px;
@@ -190,7 +201,7 @@ section {
 
 .hero h1 {
     margin-bottom: 24px;
-    color: var(--azul);
+    color: #ffffff;
     font-size: clamp(42px, 6vw, 72px);
     line-height: 1.03;
     letter-spacing: -2px;
@@ -203,7 +214,7 @@ section {
 .hero-text {
     max-width: 600px;
     margin-bottom: 34px;
-    color: var(--cinza);
+    color: #dce2f0;
     font-size: 17px;
 }
 
@@ -212,12 +223,16 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     border: 0;
     border-radius: 10px;
+
     background: var(--laranja);
     color: var(--azul);
+
     font-weight: 800;
     cursor: pointer;
+
     transition:
         transform 0.25s ease,
         background 0.25s ease,
@@ -245,19 +260,28 @@ section {
 .shield {
     width: min(330px, 75vw);
     aspect-ratio: 1;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border: 1px solid rgba(253, 143, 20, 0.35);
     border-radius: 38% 38% 45% 45%;
+
     background:
-        radial-gradient(circle, rgba(253, 143, 20, 0.16), transparent 62%),
-        #edf2fa;
+        radial-gradient(
+            circle,
+            rgba(253, 143, 20, 0.18),
+            transparent 62%
+        ),
+        #eaf0fa;
+
     color: var(--laranja);
     font-size: 125px;
+
     box-shadow:
         0 0 0 20px rgba(253, 143, 20, 0.04),
-        0 25px 70px rgba(23, 31, 73, 0.13);
+        0 25px 70px rgba(0, 0, 0, 0.22);
 }
 
 /* =========================
@@ -271,6 +295,7 @@ section {
 .sobre > p {
     width: min(900px, 100%);
     margin: 0 auto;
+
     color: var(--cinza);
     text-align: center;
     font-size: 16px;
@@ -291,6 +316,7 @@ section {
 .cards {
     width: min(1180px, 100%);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
@@ -298,10 +324,13 @@ section {
 
 .card {
     padding: 32px 28px;
+
     border: 1px solid var(--borda);
     border-radius: 18px;
+
     background: var(--branco);
     box-shadow: var(--sombra);
+
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
@@ -310,20 +339,28 @@ section {
 
 .card:hover {
     transform: translateY(-7px);
+
     border-color: rgba(253, 143, 20, 0.45);
-    box-shadow: 0 20px 45px rgba(23, 31, 73, 0.13);
+
+    box-shadow:
+        0 20px 45px rgba(23, 31, 73, 0.13);
 }
 
 .icon,
 .diferencial-icon {
     width: 52px;
     height: 52px;
+
     margin-bottom: 22px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 14px;
+
     background: rgba(253, 143, 20, 0.12);
+
     font-size: 25px;
 }
 
@@ -361,6 +398,7 @@ section {
 .diferenciais-grid {
     width: min(1100px, 100%);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
@@ -368,9 +406,12 @@ section {
 
 .diferencial-card {
     padding: 30px 22px;
+
     border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 18px;
+
     background: rgba(255, 255, 255, 0.055);
+
     transition:
         transform 0.3s ease,
         background 0.3s ease;
@@ -406,6 +447,7 @@ section {
 .etapas {
     width: min(1100px, 100%);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
@@ -413,22 +455,30 @@ section {
 
 .etapa {
     position: relative;
+
     padding: 28px 22px;
+
     border: 1px solid var(--borda);
     border-radius: 18px;
+
     background: #fafbfd;
 }
 
 .numero {
     width: 45px;
     height: 45px;
+
     margin-bottom: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
+
     background: var(--laranja);
     color: var(--azul);
+
     font-weight: 800;
 }
 
@@ -448,6 +498,7 @@ section {
 .depoimentos-grid {
     width: min(1180px, 100%);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
@@ -455,20 +506,24 @@ section {
 
 .depoimento-card {
     padding: 28px;
+
     border: 1px solid var(--borda);
     border-radius: 18px;
+
     background: var(--branco);
     box-shadow: var(--sombra);
 }
 
 .estrelas {
     margin-bottom: 18px;
+
     color: var(--laranja);
     letter-spacing: 3px;
 }
 
 .depoimento-card > p {
     margin-bottom: 24px;
+
     color: var(--cinza);
     font-size: 14px;
 }
@@ -482,12 +537,16 @@ section {
 .avatar {
     width: 42px;
     height: 42px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
+
     background: var(--azul);
     color: var(--branco);
+
     font-weight: 700;
 }
 
@@ -503,8 +562,11 @@ section {
 
 .nota-depoimentos {
     max-width: 850px;
+
     margin: 30px auto 0;
+
     color: #8a93a5;
+
     text-align: center;
     font-size: 12px;
 }
@@ -520,9 +582,11 @@ section {
 .contato-container {
     width: min(1150px, 100%);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 45px;
+
     align-items: start;
 }
 
@@ -532,11 +596,15 @@ section {
 
 .contato-badge {
     display: inline-block;
+
     margin-bottom: 15px;
     padding: 7px 12px;
+
     border-radius: 30px;
+
     background: rgba(253, 143, 20, 0.12);
     color: #c66c00;
+
     font-size: 11px;
     font-weight: 800;
 }
@@ -544,6 +612,7 @@ section {
 .contato-intro h3,
 .form-header h3 {
     margin-bottom: 12px;
+
     color: var(--azul);
     font-size: 28px;
 }
@@ -556,6 +625,7 @@ section {
 
 .info-list {
     margin-top: 32px;
+
     display: grid;
     gap: 18px;
 }
@@ -569,11 +639,15 @@ section {
 .info-icon {
     width: 43px;
     height: 43px;
+
     flex-shrink: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 12px;
+
     background: #f0f3f8;
 }
 
@@ -601,9 +675,12 @@ section {
 .contato-frase {
     margin-top: 35px;
     padding: 20px;
+
     display: flex;
     gap: 14px;
+
     border-radius: 16px;
+
     background: var(--azul);
     color: var(--branco);
 }
@@ -624,8 +701,10 @@ section {
 
 .contato-form {
     padding: 35px;
+
     border: 1px solid var(--borda);
     border-radius: 20px;
+
     background: var(--branco);
     box-shadow: var(--sombra);
 }
@@ -636,9 +715,14 @@ section {
 
 .form-header > span {
     color: var(--laranja);
+
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 1.3px;
+}
+
+.form-header h3 {
+    margin-top: 5px;
 }
 
 .form-group {
@@ -647,8 +731,11 @@ section {
 
 .form-group label {
     display: block;
+
     margin-bottom: 7px;
+
     color: var(--azul);
+
     font-size: 13px;
     font-weight: 600;
 }
@@ -656,13 +743,19 @@ section {
 .form-group input,
 .form-group textarea {
     width: 100%;
+
     padding: 13px 14px;
+
     border: 1px solid var(--borda);
     border-radius: 10px;
+
     outline: none;
+
     background: #fbfcfe;
     color: var(--azul);
+
     font-size: 13px;
+
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
@@ -676,7 +769,9 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--laranja);
-    box-shadow: 0 0 0 3px rgba(253, 143, 20, 0.12);
+
+    box-shadow:
+        0 0 0 3px rgba(253, 143, 20, 0.12);
 }
 
 .btn-contato {
@@ -696,7 +791,9 @@ footer {
 .footer-content {
     width: min(1150px, 90%);
     margin: 0 auto;
+
     padding: 60px 0 45px;
+
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 60px;
@@ -709,7 +806,9 @@ footer {
 
 .footer-slogan {
     max-width: 280px;
+
     margin-top: 15px;
+
     color: #bfc7dc;
     font-size: 13px;
 }
@@ -731,6 +830,7 @@ footer {
 .footer-contact p {
     color: #bfc7dc;
     font-size: 13px;
+
     transition: color 0.2s ease;
 }
 
@@ -740,10 +840,13 @@ footer {
 
 .footer-bottom {
     padding: 20px 6%;
+
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
     color: #8e98b1;
     font-size: 11px;
 }
@@ -754,7 +857,9 @@ footer {
 
 .animar {
     opacity: 0;
+
     transform: translateY(30px);
+
     transition:
         opacity 0.7s ease,
         transform 0.7s ease;
@@ -771,35 +876,48 @@ footer {
 
 .botao-topo {
     position: fixed;
+
     right: 25px;
     bottom: 25px;
+
     width: 48px;
     height: 48px;
+
     border: none;
     border-radius: 50%;
+
     background-color: var(--laranja);
     color: var(--azul);
+
     font-size: 22px;
     font-weight: 700;
+
     cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     opacity: 0;
     visibility: hidden;
+
     transform: translateY(20px);
+
     transition: 0.3s;
+
     z-index: 999;
 }
 
 .botao-topo.ativo {
     opacity: 1;
     visibility: visible;
+
     transform: translateY(0);
 }
 
 .botao-topo:hover {
     background-color: var(--laranja-hover);
+
     transform: translateY(-4px);
 }
 
@@ -808,6 +926,7 @@ footer {
 ========================= */
 
 @media (max-width: 1000px) {
+
     .nav-links {
         gap: 17px;
     }
@@ -830,7 +949,12 @@ footer {
     }
 }
 
+/* =========================
+   TABLET / CELULAR
+========================= */
+
 @media (max-width: 780px) {
+
     .navbar {
         min-height: 70px;
     }
@@ -849,8 +973,11 @@ footer {
 
     .hero {
         min-height: auto;
+
         padding-top: 70px;
+
         grid-template-columns: 1fr;
+
         text-align: center;
     }
 
@@ -895,7 +1022,12 @@ footer {
     }
 }
 
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
 @media (max-width: 480px) {
+
     .hero h1 {
         font-size: 40px;
         letter-spacing: -1px;
