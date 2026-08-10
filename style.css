@@ -1,4 +1,4 @@
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,286 +10,399 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #071a2f;
-    color: #ffffff;
+    background: #ffffff;
+    color: #171F49;
 }
 
 /* =========================
    CABEÇALHO
 ========================= */
 
-header {
-    background-color: #081f38;
-    padding: 15px 8%;
+.header {
+    background: #171F49;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .navbar {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 82px;
+    padding: 12px 30px;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 25px;
+}
+
+/* Logo */
+
+.logo-link {
+    display: flex;
     align-items: center;
 }
 
-/* Logo em imagem */
 .logo-img {
-    width: 150px;
+    width: 145px;
     height: auto;
     display: block;
 }
 
 /* Menu */
+
 .nav-links {
     display: flex;
+    align-items: center;
+    gap: 25px;
     list-style: none;
-    gap: 30px;
 }
 
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #00c2ff;
+    color: #FFA539;
+}
+
+/* Botão Contato */
+
+.nav-button {
+    background: #FD8F14;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 11px 22px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #FFA539;
+    transform: translateY(-2px);
 }
 
 /* =========================
-   PÁGINA INICIAL
+   BANNER PRINCIPAL
 ========================= */
 
 .hero {
-    min-height: 85vh;
+    min-height: calc(100vh - 82px);
+
+    padding: 80px 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 10%;
-    gap: 50px;
-    background: linear-gradient(135deg, #071a2f, #0b2d4d);
+
+    gap: 70px;
+
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            rgba(253, 143, 20, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #171F49,
+            #142451
+        );
+
+    overflow: hidden;
 }
+
+/* Texto */
 
 .hero-content {
     max-width: 650px;
 }
 
-.tag {
-    color: #00c2ff;
+.hero-tag {
+    display: inline-block;
+
+    color: #FD8F14;
+
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 55px;
-    line-height: 1.15;
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.1;
+
     margin-bottom: 25px;
 }
 
 .hero h1 span {
-    color: #00c2ff;
+    color: #FD8F14;
 }
 
 .hero-text {
+    color: #d9deea;
+
     font-size: 17px;
     line-height: 1.8;
-    color: #c7d5e0;
-    margin-bottom: 30px;
+
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+/* Botões */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    background-color: #00c2ff;
-    color: #071a2f;
-    text-decoration: none;
-    padding: 14px 28px;
+
+    padding: 14px 25px;
+
     border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
     font-weight: 700;
-    transition: 0.3s;
+
+    transition: 0.3s ease;
 }
 
-.btn:hover {
+.btn-primary {
+    background: #FD8F14;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #FFA539;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 194, 255, 0.25);
+    box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
 }
 
-/* Ícone do escudo */
+.btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #171F49;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ÁREA VISUAL
+========================= */
+
 .hero-visual {
+    width: 420px;
+    min-width: 350px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.shield {
-    font-size: 150px;
-    padding: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 194, 255, 0.1);
-    border: 1px solid rgba(0, 194, 255, 0.3);
-}
+.security-card {
+    width: 100%;
+    padding: 45px 35px;
 
-/* =========================
-   QUEM SOMOS
-========================= */
+    background: rgba(255, 255, 255, 0.08);
 
-.sobre {
-    padding: 100px 15%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
     text-align: center;
-    background-color: #081f38;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
-.section-title p {
-    color: #00c2ff;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
+.security-icon {
+    width: 100px;
+    height: 100px;
 
-.section-title h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
-}
+    margin: 0 auto 25px;
 
-.sobre > p {
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.8;
-    color: #c7d5e0;
-}
-
-/* =========================
-   SERVIÇOS
-========================= */
-
-.servicos {
-    padding: 100px 10%;
-    text-align: center;
-}
-
-.cards {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 25px;
-    margin-top: 50px;
-    flex-wrap: wrap;
+
+    border-radius: 50%;
+
+    background: rgba(253, 143, 20, 0.15);
+
+    border: 1px solid rgba(253, 143, 20, 0.4);
+
+    font-size: 50px;
 }
 
-.card {
-    background-color: #0b2d4d;
-    width: 300px;
-    padding: 35px 25px;
-    border-radius: 15px;
-    text-align: left;
-    border: 1px solid rgba(0, 194, 255, 0.15);
-    transition: 0.3s;
-}
+.security-card h3 {
+    color: #ffffff;
 
-.card:hover {
-    transform: translateY(-8px);
-    border-color: #00c2ff;
-}
+    font-size: 23px;
 
-.icon {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-size: 20px;
     margin-bottom: 12px;
 }
 
-.card p {
-    color: #c7d5e0;
-    line-height: 1.7;
+.security-card p {
+    color: #cbd2df;
+
     font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
 }
 
-/* =========================
-   CONTATO
-========================= */
+.security-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
-.contato {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #0b2d4d, #071a2f);
+    padding: 9px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+
+    font-size: 12px;
 }
 
-.contato h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
+.security-status span {
+    width: 8px;
+    height: 8px;
 
-.contato p {
-    color: #c7d5e0;
-    margin-bottom: 30px;
-}
+    border-radius: 50%;
 
-/* =========================
-   RODAPÉ
-========================= */
-
-footer {
-    background-color: #04101e;
-    padding: 35px 8%;
-    text-align: center;
-}
-
-footer .logo {
-    margin-bottom: 10px;
-}
-
-footer p {
-    color: #8fa4b5;
-    font-size: 13px;
+    background: #FD8F14;
 }
 
 /* =========================
    RESPONSIVIDADE
 ========================= */
 
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
+@media (max-width: 1000px) {
 
     .nav-links {
         gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        width: 350px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .logo-img {
-        width: 130px;
+    .nav-links {
+        order: 3;
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero {
+        min-height: auto;
+
         flex-direction: column;
+
         text-align: center;
-        padding: 70px 8%;
+
+        padding: 70px 7%;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .hero-visual {
-        order: -1;
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 12px 18px;
     }
 
-    .shield {
-        font-size: 100px;
-        padding: 35px;
+    .logo-img {
+        width: 125px;
     }
 
-    .section-title h2,
-    .contato h2 {
-        font-size: 28px;
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .security-card {
+        padding: 35px 25px;
     }
 }
