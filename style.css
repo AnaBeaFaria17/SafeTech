@@ -91,7 +91,7 @@ body {
 }
 
 
-/* Botão */
+/* Botão de contato */
 
 .nav-button {
     background: #FD8F14;
@@ -118,7 +118,7 @@ body {
 
 
 /* =========================
-   BANNER
+   BANNER PRINCIPAL
 ========================= */
 
 .hero {
@@ -667,9 +667,6 @@ body {
         0 15px 35px rgba(23, 31, 73, 0.12);
 }
 
-
-/* Ícone */
-
 .service-icon {
     width: 55px;
     height: 55px;
@@ -692,9 +689,6 @@ body {
     background: #FD8F14;
 }
 
-
-/* Título */
-
 .service-card h3 {
     color: #171F49;
 
@@ -705,9 +699,6 @@ body {
     margin-bottom: 12px;
 }
 
-
-/* Descrição */
-
 .service-card p {
     color: #6B7280;
 
@@ -717,9 +708,6 @@ body {
 
     margin-bottom: 22px;
 }
-
-
-/* Link */
 
 .service-link {
     color: #FD8F14;
@@ -739,11 +727,138 @@ body {
 
 
 /* =========================
+   DIFERENCIAIS
+========================= */
+
+.diferenciais {
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171F49,
+            #142451
+        );
+
+    color: #ffffff;
+}
+
+.diferenciais-header {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.diferenciais-header .section-tag {
+    color: #FD8F14;
+}
+
+.diferenciais-header h2 {
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.diferenciais-header p {
+    color: #d9deea;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* Cards */
+
+.diferenciais-grid {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.diferencial-card {
+    padding: 32px 25px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-8px);
+
+    background: rgba(255, 255, 255, 0.11);
+
+    border-color: #FD8F14;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Ícones */
+
+.diferencial-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: rgba(253, 143, 20, 0.15);
+
+    border: 1px solid rgba(253, 143, 20, 0.3);
+
+    font-size: 30px;
+}
+
+.diferencial-card h3 {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+}
+
+.diferencial-card p {
+    color: #cbd2df;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
    RODAPÉ
 ========================= */
 
 footer {
-    background: #142451;
+    background: #0d1635;
 
     color: #ffffff;
 
@@ -784,12 +899,14 @@ footer p {
     .service-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 @media (max-width: 800px) {
-
-    /* Header */
 
     .navbar {
         flex-wrap: wrap;
@@ -876,12 +993,21 @@ footer p {
     .service-grid {
         grid-template-columns: 1fr;
     }
+
+
+    /* Diferenciais */
+
+    .diferenciais {
+        padding: 75px 7%;
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
 @media (max-width: 500px) {
-
-    /* Header */
 
     .navbar {
         padding: 12px 18px;
@@ -954,5 +1080,12 @@ footer p {
 
     .service-card {
         padding: 28px 23px;
+    }
+
+
+    /* Diferenciais */
+
+    .diferenciais {
+        padding: 65px 20px;
     }
 }
