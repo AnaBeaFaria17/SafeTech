@@ -1,4 +1,8 @@
-  * {
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,29 +18,40 @@ body {
     color: #171F49;
 }
 
+
 /* =========================
    CABEÇALHO
 ========================= */
 
 .header {
     background: #171F49;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .navbar {
     max-width: 1250px;
+
     margin: 0 auto;
+
     min-height: 82px;
+
     padding: 12px 30px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 25px;
 }
+
 
 /* Logo */
 
@@ -48,23 +63,32 @@ body {
 .logo-img {
     width: 145px;
     height: auto;
+
     display: block;
 }
+
 
 /* Menu */
 
 .nav-links {
     display: flex;
+
     align-items: center;
+
     gap: 25px;
+
     list-style: none;
 }
 
 .nav-links a {
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 14px;
+
     font-weight: 500;
+
     transition: 0.3s ease;
 }
 
@@ -72,17 +96,22 @@ body {
     color: #FFA539;
 }
 
+
 /* Botão Contato */
 
 .nav-button {
     background: #FD8F14;
+
     color: #ffffff;
+
     text-decoration: none;
 
     padding: 11px 22px;
+
     border-radius: 8px;
 
     font-size: 14px;
+
     font-weight: 700;
 
     transition: 0.3s ease;
@@ -90,8 +119,10 @@ body {
 
 .nav-button:hover {
     background: #FFA539;
+
     transform: translateY(-2px);
 }
+
 
 /* =========================
    BANNER PRINCIPAL
@@ -103,7 +134,9 @@ body {
     padding: 80px 7%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 70px;
@@ -123,7 +156,8 @@ body {
     overflow: hidden;
 }
 
-/* Texto */
+
+/* Conteúdo */
 
 .hero-content {
     max-width: 650px;
@@ -135,7 +169,9 @@ body {
     color: #FD8F14;
 
     font-size: 13px;
+
     font-weight: 700;
+
     letter-spacing: 2px;
 
     margin-bottom: 20px;
@@ -145,6 +181,7 @@ body {
     color: #ffffff;
 
     font-size: clamp(42px, 5vw, 68px);
+
     line-height: 1.1;
 
     margin-bottom: 25px;
@@ -158,18 +195,26 @@ body {
     color: #d9deea;
 
     font-size: 17px;
+
     line-height: 1.8;
 
     max-width: 600px;
+
     margin-bottom: 35px;
 }
 
-/* Botões */
+
+/* =========================
+   BOTÕES DO BANNER
+========================= */
 
 .hero-buttons {
     display: flex;
+
     align-items: center;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
@@ -183,6 +228,7 @@ body {
     text-decoration: none;
 
     font-size: 14px;
+
     font-weight: 700;
 
     transition: 0.3s ease;
@@ -190,41 +236,53 @@ body {
 
 .btn-primary {
     background: #FD8F14;
+
     color: #ffffff;
 }
 
 .btn-primary:hover {
     background: #FFA539;
+
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
+
+    box-shadow:
+        0 10px 25px rgba(253, 143, 20, 0.25);
 }
 
 .btn-secondary {
     border: 1px solid rgba(255, 255, 255, 0.35);
+
     color: #ffffff;
 }
 
 .btn-secondary:hover {
     background: #ffffff;
+
     color: #171F49;
+
     transform: translateY(-3px);
 }
 
+
 /* =========================
-   ÁREA VISUAL
+   ÁREA VISUAL DO BANNER
 ========================= */
 
 .hero-visual {
     width: 420px;
+
     min-width: 350px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
 .security-card {
     width: 100%;
+
     padding: 45px 35px;
 
     background: rgba(255, 255, 255, 0.08);
@@ -243,12 +301,15 @@ body {
 
 .security-icon {
     width: 100px;
+
     height: 100px;
 
     margin: 0 auto 25px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -272,14 +333,20 @@ body {
     color: #cbd2df;
 
     font-size: 14px;
+
     line-height: 1.7;
 
     margin-bottom: 25px;
 }
 
+
+/* Status */
+
 .security-status {
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
 
     padding: 9px 15px;
@@ -295,12 +362,266 @@ body {
 
 .security-status span {
     width: 8px;
+
     height: 8px;
 
     border-radius: 50%;
 
     background: #FD8F14;
 }
+
+
+/* =========================
+   QUEM SOMOS
+========================= */
+
+.about {
+    background: #ffffff;
+
+    padding: 100px 7%;
+}
+
+.about-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+.about-content {
+    flex: 1;
+
+    max-width: 650px;
+}
+
+
+/* Título da seção */
+
+.section-tag {
+    display: inline-block;
+
+    color: #FD8F14;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    color: #171F49;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+
+/* Texto */
+
+.about-content p {
+    color: #4B5563;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   PONTOS DO QUEM SOMOS
+========================= */
+
+.about-points {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.about-point {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.about-point span {
+    width: 25px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #FD8F14;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.about-point p {
+    margin: 0;
+
+    color: #171F49;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   CARTÃO VISUAL
+========================= */
+
+.about-visual {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.about-card {
+    width: 360px;
+
+    min-height: 360px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171F49,
+            #142451
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 50px rgba(23, 31, 73, 0.20);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(253, 143, 20, 0.12);
+
+    top: -80px;
+
+    right: -70px;
+}
+
+.about-icon {
+    width: 110px;
+
+    height: 110px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(253, 143, 20, 0.15);
+
+    border: 1px solid rgba(253, 143, 20, 0.4);
+
+    font-size: 55px;
+
+    margin-bottom: 25px;
+
+    position: relative;
+}
+
+.about-card strong {
+    color: #ffffff;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+    position: relative;
+}
+
+.about-card span {
+    color: #d9deea;
+
+    font-size: 14px;
+
+    position: relative;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #142451;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+footer p {
+    color: #d9deea;
+
+    font-size: 13px;
+}
+
 
 /* =========================
    RESPONSIVIDADE
@@ -314,29 +635,40 @@ body {
 
     .hero {
         padding: 70px 6%;
+
         gap: 40px;
     }
 
     .hero-visual {
         width: 350px;
+
         min-width: 300px;
     }
 }
 
+
 @media (max-width: 800px) {
+
+    /* Header */
 
     .navbar {
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
     .nav-links {
         order: 3;
+
         width: 100%;
 
         justify-content: center;
+
         flex-wrap: wrap;
     }
+
+
+    /* Banner */
 
     .hero {
         min-height: auto;
@@ -354,6 +686,7 @@ body {
 
     .hero-text {
         margin-left: auto;
+
         margin-right: auto;
     }
 
@@ -363,11 +696,42 @@ body {
 
     .hero-visual {
         width: 100%;
+
         max-width: 420px;
+    }
+
+
+    /* Quem Somos */
+
+    .about {
+        padding: 75px 7%;
+    }
+
+    .about-container {
+        flex-direction: column;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+    .about-points {
+        text-align: left;
+    }
+
+    .about-visual {
+        width: 100%;
     }
 }
 
+
 @media (max-width: 500px) {
+
+    /* Header */
 
     .navbar {
         padding: 12px 18px;
@@ -387,8 +751,12 @@ body {
 
     .nav-button {
         padding: 9px 15px;
+
         font-size: 12px;
     }
+
+
+    /* Banner */
 
     .hero {
         padding: 55px 20px;
@@ -404,5 +772,18 @@ body {
 
     .security-card {
         padding: 35px 25px;
+    }
+
+
+    /* Quem Somos */
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        width: 100%;
+
+        min-height: 320px;
     }
 }
