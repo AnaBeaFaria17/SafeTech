@@ -802,7 +802,15 @@ footer {
 .footer-brand .logo-img {
     width: 145px;
     height: auto;
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 50%;
+
     filter: none;
+
+    object-fit: contain;
 }
 
 .footer-slogan {
