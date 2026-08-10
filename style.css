@@ -15,7 +15,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     background-color: #ffffff;
-    color: #171f49;
+    color: #171F49;
 }
 
 
@@ -24,7 +24,7 @@ body {
 ========================= */
 
 header {
-    background-color: #171f49;
+    background-color: #171F49;
     padding: 15px 8%;
     position: sticky;
     top: 0;
@@ -43,7 +43,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 6px 12px;
     border-radius: 8px;
 }
@@ -65,7 +65,7 @@ header {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -73,7 +73,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #fd8f14;
+    color: #FD8F14;
 }
 
 
@@ -91,12 +91,11 @@ header {
     padding: 80px 10%;
     gap: 50px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #171f49,
-            #142451
-        );
+    background: linear-gradient(
+        135deg,
+        #171F49,
+        #142451
+    );
 }
 
 .hero-content {
@@ -104,7 +103,7 @@ header {
 }
 
 .tag {
-    color: #fd8f14;
+    color: #FD8F14;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -112,28 +111,31 @@ header {
 }
 
 .hero h1 {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 55px;
     line-height: 1.15;
     margin-bottom: 25px;
 }
 
 .hero h1 span {
-    color: #fd8f14;
+    color: #FD8F14;
 }
 
 .hero-text {
     font-size: 17px;
     line-height: 1.8;
-    color: #d8deea;
+    color: #D8DEEA;
     margin-bottom: 30px;
 }
+
+
+/* Botão */
 
 .btn {
     display: inline-block;
 
-    background-color: #fd8f14;
-    color: #171f49;
+    background-color: #FD8F14;
+    color: #171F49;
 
     text-decoration: none;
 
@@ -147,13 +149,13 @@ header {
 }
 
 .btn:hover {
-    background-color: #ffa539;
+    background-color: #FFA539;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
 }
 
 
-/* Visual */
+/* Visual do Hero */
 
 .hero-visual {
     display: flex;
@@ -183,7 +185,7 @@ header {
 }
 
 .section-title p {
-    color: #fd8f14;
+    color: #FD8F14;
 
     font-size: 13px;
 
@@ -195,7 +197,7 @@ header {
 }
 
 .section-title h2 {
-    color: #171f49;
+    color: #171F49;
 
     font-size: 36px;
 
@@ -212,7 +214,7 @@ header {
 
     text-align: center;
 
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .sobre > p {
@@ -222,7 +224,7 @@ header {
 
     line-height: 1.8;
 
-    color: #4b5563;
+    color: #4B5563;
 
     font-size: 15px;
 }
@@ -237,7 +239,7 @@ header {
 
     text-align: center;
 
-    background-color: #f5f7fa;
+    background-color: #F5F7FA;
 }
 
 .cards {
@@ -253,7 +255,7 @@ header {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 
     width: 300px;
 
@@ -263,7 +265,7 @@ header {
 
     text-align: left;
 
-    border: 1px solid #e5e7eb;
+    border: 1px solid #E5E7EB;
 
     box-shadow: 0 8px 20px rgba(23, 31, 73, 0.06);
 
@@ -273,7 +275,7 @@ header {
 .card:hover {
     transform: translateY(-8px);
 
-    border-color: #fd8f14;
+    border-color: #FD8F14;
 
     box-shadow: 0 15px 30px rgba(23, 31, 73, 0.12);
 }
@@ -285,7 +287,7 @@ header {
 }
 
 .card h3 {
-    color: #171f49;
+    color: #171F49;
 
     font-size: 20px;
 
@@ -293,7 +295,7 @@ header {
 }
 
 .card p {
-    color: #4b5563;
+    color: #4B5563;
 
     line-height: 1.7;
 
@@ -310,15 +312,15 @@ header {
 
     text-align: center;
 
-    background-color: #171f49;
+    background-color: #171F49;
 }
 
 .diferenciais .section-title h2 {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .diferenciais .section-title p {
-    color: #fd8f14;
+    color: #FD8F14;
 }
 
 .diferenciais-grid {
@@ -346,7 +348,7 @@ header {
 .diferencial-card:hover {
     transform: translateY(-8px);
 
-    border-color: #fd8f14;
+    border-color: #FD8F14;
 
     background-color: rgba(255, 255, 255, 0.12);
 }
@@ -358,7 +360,7 @@ header {
 }
 
 .diferencial-card h3 {
-    color: #ffffff;
+    color: #FFFFFF;
 
     font-size: 18px;
 
@@ -366,7 +368,7 @@ header {
 }
 
 .diferencial-card p {
-    color: #d8deea;
+    color: #D8DEEA;
 
     font-size: 14px;
 
@@ -381,7 +383,7 @@ header {
 .como-funciona {
     padding: 100px 10%;
 
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 
     text-align: center;
 }
@@ -410,9 +412,9 @@ header {
 
     border-radius: 50%;
 
-    background-color: #171f49;
+    background-color: #171F49;
 
-    color: #ffffff;
+    color: #FFFFFF;
 
     display: flex;
 
@@ -424,11 +426,11 @@ header {
 
     font-weight: 700;
 
-    border: 4px solid #fd8f14;
+    border: 4px solid #FD8F14;
 }
 
 .etapa h3 {
-    color: #171f49;
+    color: #171F49;
 
     font-size: 19px;
 
@@ -436,7 +438,7 @@ header {
 }
 
 .etapa p {
-    color: #4b5563;
+    color: #4B5563;
 
     font-size: 14px;
 
@@ -451,13 +453,9 @@ header {
 .depoimentos {
     padding: 100px 10%;
 
-    background-color: #f5f7fa;
+    background-color: #F5F7FA;
 
     text-align: center;
-}
-
-.depoimentos .section-title h2 {
-    color: #171f49;
 }
 
 .depoimentos-grid {
@@ -471,7 +469,7 @@ header {
 }
 
 .depoimento-card {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 
     padding: 30px;
 
@@ -479,7 +477,7 @@ header {
 
     text-align: left;
 
-    border: 1px solid #e5e7eb;
+    border: 1px solid #E5E7EB;
 
     box-shadow: 0 8px 25px rgba(23, 31, 73, 0.08);
 
@@ -489,13 +487,13 @@ header {
 .depoimento-card:hover {
     transform: translateY(-8px);
 
-    border-color: #fd8f14;
+    border-color: #FD8F14;
 
     box-shadow: 0 15px 30px rgba(23, 31, 73, 0.12);
 }
 
 .estrelas {
-    color: #fd8f14;
+    color: #FD8F14;
 
     font-size: 18px;
 
@@ -505,7 +503,7 @@ header {
 }
 
 .depoimento-card p {
-    color: #4b5563;
+    color: #4B5563;
 
     font-size: 14px;
 
@@ -528,9 +526,9 @@ header {
 
     border-radius: 50%;
 
-    background-color: #171f49;
+    background-color: #171F49;
 
-    color: #ffffff;
+    color: #FFFFFF;
 
     display: flex;
 
@@ -546,7 +544,7 @@ header {
 .cliente strong {
     display: block;
 
-    color: #171f49;
+    color: #171F49;
 
     font-size: 15px;
 }
@@ -554,7 +552,7 @@ header {
 .cliente span {
     display: block;
 
-    color: #6b7280;
+    color: #6B7280;
 
     font-size: 12px;
 
@@ -564,11 +562,119 @@ header {
 .nota-depoimentos {
     margin-top: 35px;
 
-    color: #6b7280;
+    color: #6B7280;
 
     font-size: 12px;
 
     font-style: italic;
+}
+
+
+/* =========================
+   CHAMADA PARA CONTATO
+========================= */
+
+.cta {
+    padding: 100px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #171F49,
+        #142451
+    );
+
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.cta-tag {
+    color: #FD8F14;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.cta h2 {
+    color: #FFFFFF;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.cta-content > p:not(.cta-tag) {
+    color: #D8DEEA;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+.btn-cta {
+    display: inline-block;
+
+    background-color: #FD8F14;
+
+    color: #171F49;
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #FFA539;
+
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow: 0 10px 25px rgba(253, 143, 20, 0.25);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #0D1535;
+
+    padding: 40px 8%;
+
+    text-align: center;
+}
+
+footer .logo {
+    display: inline-flex;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #AAB3C5;
+
+    font-size: 13px;
 }
 
 
@@ -592,6 +698,10 @@ header {
 
 }
 
+
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 768px) {
 
@@ -653,7 +763,8 @@ header {
     .servicos,
     .diferenciais,
     .como-funciona,
-    .depoimentos {
+    .depoimentos,
+    .cta {
         padding: 75px 8%;
     }
 
@@ -680,6 +791,17 @@ header {
 
     .depoimentos-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    .cta-content > p:not(.cta-tag) {
+        font-size: 14px;
     }
 
 }
